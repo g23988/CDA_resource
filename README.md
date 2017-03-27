@@ -1,4 +1,4 @@
-# ACD_resource
+# CDA_resource
 for AWS Certified Developer – Associate test prepare
 
 ## 問題集
