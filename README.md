@@ -1,7 +1,10 @@
 # CDA_resource
 for AWS Certified Developer – Associate test prepare
+
 這裡是以筆記形式紀錄我在CDA考試所準備的東西
+
 如果需要更詳細的操作
+
 請至[我的網誌](http://g23988.blogspot.tw/)觀看
 
 
@@ -22,6 +25,8 @@ D. Messages will be delivered one or more times and message delivery order is in
 
 SQS可以提供多次讀取，雖說目前已經有FIFO (First in, First out)，但是還不會反映在考試上
 
+---------
+
 ```
 EC2 instances are launched from Amazon Machine Images (AMIs). A given public AMI:
 A. can be used to launch EC2 instances in any AWS region
@@ -32,6 +37,8 @@ D. can only be used to launch EC2 instances in the same AWS availability zone as
 > C
 
 AMI僅會儲存在當下的region，如果想要讓AMI能夠在別的region使用，可以使用 Copy AMI 功能複製到別的region
+
+---------
 
 ```
 Company B provides an online image recognition service and utilizes SQS to decouple system
@@ -54,6 +61,8 @@ D. Set the DelaySeconds parameter of a message to 20 seconds
 
 那個選項在aws console 上的label是 Receive Message Wait Time
 
+---------
+
 ```
 You attempt to store an object in the US-STANDARD region in Amazon S3, and receive a confirmation
 that it has been successfully stored. You then immediately make another API call and attempt to read
@@ -71,6 +80,8 @@ S3有設計最終一致性的功能(eventual consistency)，所以最新的PUT o
 
 順帶一提，美國標準(US-STANDARD) 已經改名為 北維吉尼亞 (N.Virginia us-east-1)
 
+---------
+
 ```
 You have reached your account limit for the number of CloudFormation stacks in a region. How do you
 increase your limit?
@@ -83,6 +94,8 @@ D. You cannot increase your limit
 
 找飯店？trivago！
 
+---------
+
 ```
 Which statements about DynamoDB are true? (Pick 2 correct answers)
 A. DynamoDB uses a pessimistic locking model
@@ -94,6 +107,8 @@ E. DynamoDB restricts item access during writes
 > BC
 
 這題答案我也不確定，不過這兩項看起來是DynamoDB能夠辦到的
+
+---------
 
 ```
 What is one key difference between an Amazon EBS-backed and an instance-store backed instance?
@@ -109,6 +124,8 @@ Instance-store 是設計在各台虛擬主機上的暫存空間，而EBS則是�
 所以Instance-store 會隨著stop，或是terminate而消失
 
 但是兩者reboot都是沒問題的
+
+---------
 
 ```
 A corporate web application is deployed within an Amazon VPC, and is connected to the corporate data
@@ -138,6 +155,8 @@ temporary security credentials with access to the appropriate S3 bucket.
 
 使用者則拿federated user credential 做存取
 
+---------
+
 ```
 You run an ad-supported photo sharing website using S3 to serve photos to visitors of your site. At some
 point you find out that other sites have been linking to the photos on your site, causing loss to your
@@ -153,6 +172,8 @@ D. Store photos on an EBS volume of the web server.
 
 然後使用signed urls去設定連結的過期時間
 
+
+---------
 ```
 Your application is trying to upload a 6 GB file to Simple Storage Service and receive a "Your proposed
 upload exceeds the maximum allowed object size." error message. What is a possible solution for this?
