@@ -9,6 +9,7 @@ for AWS Certified Developer – Associate test prepare
 
 ## 官方範例
 聽說必出，所以自己先拿來回答了
+
 有找到正確答案再修正
 ```
 Which of the following statements about SQS is true?
@@ -65,7 +66,9 @@ D. You exceeded the bucket object limit, and once this limit is raised the objec
 > A
 
 S3有設計最終一致性的功能(eventual consistency)，所以最新的PUT object並不會馬上反映在讀取上
+
 直到所有的準備都完成，才能取得object
+
 順帶一提，美國標準(US-STANDARD) 已經改名為 北維吉尼亞 (N.Virginia us-east-1)
 
 ```
@@ -102,7 +105,9 @@ D. Virtual Private Cloud requires EBS backed instances
 > C
 
 Instance-store 是設計在各台虛擬主機上的暫存空間，而EBS則是在AWS Storage設備上的iSCSI空間
+
 所以Instance-store 會隨著stop，或是terminate而消失
+
 但是兩者reboot都是沒問題的
 
 ```
@@ -128,7 +133,9 @@ temporary security credentials with access to the appropriate S3 bucket.
 > BD
 
 在LDAP做auth 使用情景下
+
 應用程式拿role，再用role給予的temporary credentials 做存取 (預設一小時後過期 3600s)
+
 使用者則拿federated user credential 做存取
 
 ```
@@ -143,6 +150,7 @@ D. Store photos on an EBS volume of the web server.
 > B
 
 先把暴露在外面的URL先拿掉，避免盜連
+
 然後使用signed urls去設定連結的過期時間
 
 ```
@@ -157,8 +165,11 @@ E. Upload to a different region
 > B
 
 AWS建議超過100MB就使用 Multi-part upload 了
+
 當然不做也可以，但是會被限制在 5 GB
+
 單個object最大可以存 5 TB
+
 而bucket能存放的object則是無限。
 
 
