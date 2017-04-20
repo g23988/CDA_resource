@@ -10,6 +10,12 @@ for AWS Certified Developer – Associate test prepare
 
 ## 重點節錄
 
+### SQS
+#### VisibilityTimeout
+- Each queue starts with a default setting of 30 seconds for the visibility timeout.
+- The visibility timeout for the queue. Valid values: an integer from 0 to 43,200 (12 hours). The default is 30.
+> 依照預設值，SQS被消費者A取得後30秒內，其他消費者無法看見。這個值最高可以調整到12小時。
+
 ## 官方範例
 聽說必出，所以自己先拿來回答了
 
