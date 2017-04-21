@@ -284,6 +284,7 @@ AWS建議超過100MB就使用 Multi-part upload 了
  - [範例問題解答](https://github.com/g23988/ACD_resource/blob/master/Sample_question/Pages%20from%20Amazon_ACDA.pdf)
  - [網路搜尋範例問題](https://blog.cloudthat.com/sample-questions-for-amazon-web-services-certified-developer-associate-certification/)
  - [網路搜尋範例問題2](http://devcertguru.com/certifications/amazon/exam-questions/aws-cda-v1)
+ - [網路搜尋範例問題3](http://www.aiotestking.com/amazon/category/exam-aws-cda-aws-certified-developer-associate-update-oct-27th-2016/)
 
 ## Resource
  - [ACD sample question blog](http://m8010-241-dumps-pdf.blogspot.tw/2016/03/amazon-aws-certified-developer.html?m=1)
