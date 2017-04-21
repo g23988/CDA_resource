@@ -10,6 +10,11 @@ for AWS Certified Developer – Associate test prepare
 
 ## 重點節錄
 
+### S3
+#### Bucket Restrictions and Limitations
+- A bucket is owned by the AWS account that created it. By default, you can create up to 100 buckets in each of your AWS accounts. If you need additional buckets, you can increase your bucket limit by submitting a service limit increase.
+> S3 bucket 在預設情況下可以開到100個。 當然也可以請求aws放大這個值。
+
 ### SQS
 #### VisibilityTimeout
 - Each queue starts with a default setting of 30 seconds for the visibility timeout.
