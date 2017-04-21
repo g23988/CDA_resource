@@ -36,6 +36,34 @@ D.Create a new table per hour
 
 刪掉再建最快
 
+---------
+
+```
+Which code snippet below returns the URL of a load balanced web site created in
+CloudFormation with an AWS::ElasticLoadBalancing::LoadBalancer resource name
+“ElasticLoad Balancer”?
+A.“Fn::Join” : [“”. [ “http://”, {“Fn::GetAtr” : [ “ElasticLoadBalancer”,”DNSName”]}]]
+B.“Fn::Join” : [“.”, [ “http://”, {“Ref” : “ElasticLoadBalancerDNSName”}]]
+C.“Fn::Join” : [“”. [ “http://”, {“Ref” : “ElasticLoadBalancerUrl”}]]
+D.“Fn::Join” : [“”. [ “http://”, {“Fn::GetAtr” : [ “ElasticLoadBalancer”,”Url”]}]]
+```
+> A
+
+-[官方參考]http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/example-templates-autoscaling.html
+-[官方參考](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#aws-properties-ec2-elb-ref)
+
+```
+Correct answer is A, and should be GetAtt not GetAtr
+exact code snippet:
+
+“Outputs” : {
+“URL” : {
+“Description” : “The URL of the website”,
+“Value” : { “Fn::Join” : [ “”, [ “http://”, { “Fn::GetAtt” : [ “ElasticLoadBalancer”, “DNSName” ]}]]}
+}
+```
+
+
 ## 官方範例
 聽說必出，所以自己先拿來回答了
 
