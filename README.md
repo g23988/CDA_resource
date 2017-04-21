@@ -21,6 +21,21 @@ for AWS Certified Developer – Associate test prepare
 - The visibility timeout for the queue. Valid values: an integer from 0 to 43,200 (12 hours). The default is 30.
 > 依照預設值，SQS被消費者A取得後30秒內，其他消費者無法看見。這個值最高可以調整到12小時。
 
+## 有用的範例問題
+```
+You are inserting 1000 new items every second in a DynamoDB table. Once an hour these
+items are analyzed and then are no longer needed. You need to minimize provisioned
+throughput, storage, and API calls. Given these requirements, what is the most efficient way
+to manage these Items after the analysis?
+A.Retain the items in a single table
+B.Delete items individually over a 24 hour period
+C.Delete the table and create a new table per hour
+D.Create a new table per hour
+```
+> D
+
+刪掉再建最快
+
 ## 官方範例
 聽說必出，所以自己先拿來回答了
 
