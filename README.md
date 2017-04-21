@@ -64,6 +64,36 @@ exact code snippet:
 ```
 
 ---------
+```
+Which DynamoDB limits can be raised by contacting AWS support? Choose 2 answers
+A.The number of hash keys per account
+B.The maximum storage used per account
+C.The number of tables per account
+D.The number of local secondary indexes per account
+E.The number of provisioned throughput units per account
+```
+
+> C E
+
+[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html)
+```
+or any AWS account, there is an initial limit of 256 tables per region.
+
+You can request an increase on this limit. For more information, go to http://aws.amazon.com/support.
+
+An AWS account places some initial maximum limits on the throughput you can provision:
+
+US East (N. Virginia) Region:
+Per table – 40,000 read capacity units and 40,000 write capacity units
+Per account – 80,000 read capacity units and 80,000 write capacity units
+All Other Regions:
+Per table – 10,000 read capacity units and 10,000 write capacity units
+Per account – 20,000 read capacity units and 20,000 write capacity units
+The provisioned throughput limit includes the sum of the capacity of the table together with the capacity of all of its global secondary indexes.
+```
+
+---------
+
 
 ## 官方範例
 聽說必出，所以自己先拿來回答了
