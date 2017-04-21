@@ -49,8 +49,9 @@ D.“Fn::Join” : [“”. [ “http://”, {“Fn::GetAtr” : [ “ElasticLoa
 ```
 > A
 
--[官方參考]http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/example-templates-autoscaling.html
--[官方參考](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#aws-properties-ec2-elb-ref)
+- [官方參考]http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/example-templates-autoscaling.html
+
+- [官方參考](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#aws-properties-ec2-elb-ref)
 
 ```
 Correct answer is A, and should be GetAtt not GetAtr
