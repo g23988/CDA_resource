@@ -43,6 +43,23 @@ for AWS Certified Developer – Associate test prepare
 - You can create a custom Network ACL.By default, each custom network ACL denies all inbound and outbound traffic until you add rules
 - Each subnet in your VPC must be associated with a network ACL.If you don't explicitly associated a subnet with a network ACL, the subnet is automatically associated with the default network ACL.
 - You can associated a network ACL with multiple subnets; however, a subnet can be associated with only one network ACL at a time. When you associate a network ACL with a subnet, the previous association is removed.
+- A network ACL comtains a numbered list of rules that is evaluated in order, starting with the lowest numbered rule
+- A network ACL has separate inbound and outbound rules, and each rules can either allow or deny traffic
+- Networks ACLs are stateless; responses to allowed inbound traffic are subject to the rules for outbound traffic(and vice versa)
+- Block IP Addresses using network ACL's not security group.
+
+### MAT & Bastion
+- A NAT is used to provide internet traffic to EC2 instance in private subnets
+- A Bastion is used to securely administer EC2 instance (using SSH or RDP) in private subnets. In other word, Bastion is Jump Boxes.
+
+### Resilient Architecture
+- If you want resiliency, always have 2 public subnets and 2 private subnets. Make sure each subnet is in different availability zones.
+- With ELB's make sure they are in 2 public subnets in 2 different availability zones.
+- With Bastion hosts, put them behind an autoscaling group with a minimum size of 2. Use Route53 (either round robin or using a health check) to automatically fail over
+- NAT instances are tricky to make resilient. You need one in each public subnet, each with their own public IP address, and you need to write a script to fail between the two. Instrad where possible, use NAT gateways
+
+### VPC Flow logs
+- You can monitor network traffic within your custom VPC's using VPC Flow Logs
 
 ### DynamoDB
 
