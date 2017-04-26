@@ -10,6 +10,42 @@ for AWS Certified Developer – Associate test prepare
 
 ## 重點節錄
 
+### VPC Summary
+- Think of a VPC as a logical datacenter in AWS.
+- Consists of IGW'S (Or Virtual Private Gateways),Route Tables , Network Access Control Lists, Subnets ,Security Groups.
+- 1 Subnets = 1 Availability Zone
+- Security Groups are Stateful, Network Access Control Lists are Stateless.
+- Can Peer VPCs both in the same account and with other AWS accounts
+- No such thing that transitive peering
+
+### NAT instances
+- When creating a NAT instances, Disable Source/Destination Check on the instances
+- NAT Gateway is a very new feature that might be not in exam.
+- NAT instance must be in a public Subnet
+- Must have an elactic IP address to work
+- There must be a route out of the private subnet to the NAT instance, in order for this to work
+- The amount of traffic that NAT instances supports, depends on the instance size. If you are bottlenecking, increase the instance size
+- You can create high availability using Autoscaling Groups, multiple subnets in different Availability Zone's and a script to automate failover
+- Always behind a security group
+
+### NET Gateways
+- Very new, may not be in the exam yet
+- Prefer by the enterprise
+- Scales automatically up to 10Gnps
+- No need to patch
+- Not associated with secuity groups
+- Automatically assigned a public ip address
+- Remember to update your route tables
+- No need to disable Source/Destination Checks
+
+### Network ACL's
+- Your VPC automatically comes a default Network ACL and by default it allows all inbound and outbound traffic
+- You can create a custom Network ACL.By default, each custom network ACL denies all inbound and outbound traffic until you add rules
+- Each subnet in your VPC must be associated with a network ACL.If you don't explicitly associated a subnet with a network ACL, the subnet is automatically associated with the default network ACL.
+- You can associated a network ACL with multiple subnets; however, a subnet can be associated with only one network ACL at a time. When you associate a network ACL with a subnet, the previous association is removed.
+
+### DynamoDB
+
 ### S3
 #### Bucket Restrictions and Limitations
 - A bucket is owned by the AWS account that created it. By default, you can create up to 100 buckets in each of your AWS accounts. If you need additional buckets, you can increase your bucket limit by submitting a service limit increase.
