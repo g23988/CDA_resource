@@ -63,6 +63,12 @@ for AWS Certified Developer – Associate test prepare
 
 ### DynamoDB
 
+### Route53
+- ELB's do not predefined IPv4 addresses, you resolve to them using a DNS name.
+- Understand the different between an Alias Record and a CNAME.
+- 使用 CNAME 會被收錢，Alias Record 則不會
+- Given a choice, always choose an Alias Record over a CNAME.
+
 ### S3
 #### Bucket Restrictions and Limitations
 - A bucket is owned by the AWS account that created it. By default, you can create up to 100 buckets in each of your AWS accounts. If you need additional buckets, you can increase your bucket limit by submitting a service limit increase.
