@@ -64,10 +64,18 @@ for AWS Certified Developer – Associate test prepare
 ### DynamoDB
 
 ### Route53
-- ELB's do not predefined IPv4 addresses, you resolve to them using a DNS name.
+- ELB's do not have predefined ipv4 addresses, you resolve them using a DNS name.
 - Understand the different between an Alias Record and a CNAME.
 - 使用 CNAME 會被收錢，Alias Record 則不會
 - Given a choice, always choose an Alias Record over a CNAME.
+- Remember the different routing policies and their use cases.
+  - Simple
+  - Weighted
+	- Latency
+	- Failover
+	- Geolocation
+
+
 
 ### S3
 #### Bucket Restrictions and Limitations
