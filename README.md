@@ -71,9 +71,9 @@ for AWS Certified Developer – Associate test prepare
 - Remember the different routing policies and their use cases.
   - Simple
   - Weighted
-	- Latency
-	- Failover
-	- Geolocation
+  - Latency
+  - Failover
+  - Geolocation
 
 
 
