@@ -10,6 +10,14 @@ for AWS Certified Developer – Associate test prepare
 
 ## 重點節錄
 
+### IAM
+- IAM consists of the following
+- users
+- Groups (A way to group our users and apply polices to them collectively)
+- Roles
+- Policy Documents
+
+
 ### VPC Summary
 - Think of a VPC as a logical datacenter in AWS.
 - Consists of IGW'S (Or Virtual Private Gateways),Route Tables , Network Access Control Lists, Subnets ,Security Groups.
