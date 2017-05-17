@@ -16,7 +16,14 @@ for AWS Certified Developer – Associate test prepare
 - Groups (A way to group our users and apply polices to them collectively)
 - Roles
 - Policy Documents
-
+- IAM is universal. It does not aplly to regions at this time.
+- The "root account" is simply the account created when first setup your AWS account. It has complete Admin access.
+- New Users have NO permissions when first created.
+- New Users are assigned Access Key ID & Secert Access Keys when first created.
+- These are not the same as a password, and you cannot use the Access key ID & Secret Access Key to Login in to the console. You can use this to access AWS via the APIs and Command Line howerver.
+- You only get to view these once. If you lose them, you have to regenerate them. So save them in a secure location.
+- Always setip Multifactor Authentication on your root account.
+- You can create and customise your own password rotation policies.
 
 ### VPC Summary
 - Think of a VPC as a logical datacenter in AWS.
